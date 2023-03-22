@@ -752,10 +752,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kel-nana/Review-To-do-list.git"
+    "url": "git+https://github.com/Kel-nana/Leaderboard.git"
   },
   "bugs": {
-    "url": "https://github.com/Kel-nana/Review-To-do-list/issues"
+    "url": "https://github.com/Kel-nana/Leaderboard/issues"
   },
-  "homepage": "https://github.com/Kel-nana/Review-To-do-list#readme"
+  "homepage": "https://github.com/Kel-nana/Leaderboard#readme"
 }

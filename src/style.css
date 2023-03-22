@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Minecrafter.Alt";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Minecrafter.Alt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Minecrafter.Reg";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Minecrafter.Reg.woff") format("woff");
+}
+
+:root {
+  --jazzberry-jam: #635b5f;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 1.5rem;
+  width: 100%;
+}
+
+h1 {
+  margin-right: 60%;
+  font-size: 3rem;
+  font-family: "Minecrafter.Alt", sans-serif;
+}
+
+.neon {
+  animation: flicker 1.5s infinite alternate;
+  color: rgb(75, 69, 69);
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px rgb(170, 170, 170), 0 0 11px rgb(170, 170, 170), 0 0 19px rgb(170, 170, 170), 0 0 40px var(--jazzberry-jam), 0 0 80px var(--jazzberry-jam), 0 0 90px var(--jazzberry-jam), 0 0 100px #c04a85, 0 0 150px #c04a85;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.leftSide {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.scoreContainer {
+  width: 50%;
+  list-style: none;
+}
+
+.recentScore {
+  display: flex;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.recentScore h2 {
+  width: 60%;
+}
+
+.displayScore {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid rgb(43, 41, 41);
+}
+
+.displayScore li {
+  font-size: 1.5rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+.displayScore li:nth-child(even) {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(181, 179, 177, 0.272);
+}
+
+.displayScore li:nth-child(odd) {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(181, 179, 177, 0.272);
+  background-color: rgba(250, 247, 243, 0.272);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  gap: 1rem;
+  width: 30%;
+}
+
+.form h2 {
+  margin-bottom: 0;
+}
+
+input {
+  height: 2rem;
+  width: 98%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  margin-left: 50%;
+  padding: 0.75rem;
+  color: #dfbfbf;
+  background: #326bb0bc;
+  text-transform: uppercase;
+  font-family: "Minecrafter.Reg", sans-serif;
+  letter-spacing: 2px;
+  font-size: small;
+  text-align: center;
+}

@@ -10,7 +10,6 @@ form.addEventListener('submit', async (event) => {
   const { user, score } = form.elements;
   try {
     await postData(user.value, score.value);
-    refresh();
     form.reset();
   } catch (error) {
     errorMessage.textContent = 'Failed to submit data: ';
@@ -20,7 +19,5 @@ form.addEventListener('submit', async (event) => {
 
 const refreshBtn = document.querySelector('.refreshbtn');
 refreshBtn.addEventListener('click', () => {
-  window.location.reload();
+  refresh();
 });
-
-refresh();

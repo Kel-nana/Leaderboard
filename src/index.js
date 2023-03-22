@@ -3,8 +3,8 @@ import { postData } from './modules/postData.js';
 import { refresh } from './modules/displayData.js';
 
 const errorMessage = document.querySelector('.errorMessage');
-
 const form = document.querySelector('.form');
+
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const { user, score } = form.elements;

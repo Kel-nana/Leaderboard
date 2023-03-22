@@ -28,11 +28,11 @@
 - [📝 License](#license)
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To do list]
+# 📖 [Leaderboard]
 
 <a name="about-project"></a>
 
-To do list is a project meant to master my skills in version control, GitHub flow, webpack, Jest and JavaScript.
+Leaderboard is a project meant to master my skills in version control, GitHub flow, webpack, Gitflow and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,9 +48,9 @@ To do list is a project meant to master my skills in version control, GitHub flo
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] **Display To do Lists**
-- [ ] **Add to do list dynamically**
-- [ ] **Add list in the order of their index**
+- [ ] **Display Leaderboard structure**
+- [ ] **Use ES6 modules**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## Getting Started
@@ -75,7 +75,7 @@ To do list is a project meant to master my skills in version control, GitHub flo
 To get a local copy up and running follow these simple example steps.
 
 - With git, clone the code to your machine, or download a ZIP of all the files directly.
-- [Download the ZIP file from this location](https://github.com/Kel-nana/To-Do-list/archive/refs/heads/list-structure.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
+- [Download the ZIP file from this location](https://github.com/Kel-nana/Leaderboard/archive/refs/heads/leaderscore-structure.zip) or run the following [git](https://git-scm.com/) command to clone the files to your machine:
 
 ```
 git clone git@github.com:Kel-nana/To-Do-list.git
@@ -164,6 +164,6 @@ I would like to thank Microverse documentation and my coding partner
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kel-nana/To-Do-list/blob/list-structure/LICENSE) licensed 2023.
+This project is [MIT](https://github.com/Kel-nana/Leaderboard/blob/development/LICENSE) licensed 2023.
 
 # <p align="right">(<a href="#readme-top">back to top</a>)</p>

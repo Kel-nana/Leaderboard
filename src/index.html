@@ -15,23 +15,17 @@
           <div class="scoreContainer">
             <div class="recentScore">
               <h2>Recent Scores</h2>
-              <button type="submit">Refresh</button>
+              <button class="refreshbtn" type="button">Refresh</button>
             </div>
             <ul class="displayScore">
-              <li>Name : 100</li>
-              <li>Name : 20</li>
-              <li>Name : 50</li>
-              <li>Name : 78</li>
-              <li>Name : 125</li>
-              <li>Name : 77</li>
-              <li>Name : 42</li>
+             
             </ul>
           </div>
           <form class="form">
             <h2>Add Score</h2>
             <input
               type="text"
-              name="name"
+              name="user"
               id="name"
               placeholder=" Name"
               required
@@ -43,7 +37,8 @@
               placeholder=" Score"
               required
             />
-            <button type="submit">Submit</button>
+            <p class="errorMessage" ></p>
+            <button class="submit" type="submit">Submit</button>
           </form>
         </div>
       </section>

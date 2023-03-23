@@ -1,6 +1,6 @@
 const errorMessage = document.querySelector('.errorMessage');
 
-export const API_ENDPOINT = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores';
+export const API_ENDPOINT = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/IhVi0ZViID8bfZYjMMLD/scores';
 
 export const postData = async (user, score) => {
   try {

@@ -5,6 +5,7 @@ const errorMessage = document.querySelector('.errorMessage');
 export const displayOnUI = (data) => {
   const displayList = document.querySelector('.displayScore');
   displayList.innerHTML = '';
+  data = data.sort((a, b) => b.score - a.score);
   data.forEach(({ user, score }) => {
     const li = document.createElement('li');
     li.textContent = ` ${user} : ${score} `;

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/games?styles=17672,17671");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 @font-face {
   font-family: "Minecrafter.Alt";
@@ -24,6 +26,15 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  width: 100vw;
+  height: 120vh;
+  border: 4px solid rgb(9, 11, 26);
+  background: linear-gradient(134deg, rgba(22, 74, 170, 0.205) 5%, rgba(5, 17, 19, 0.65) 50%, rgba(182, 8, 23, 0.315) 95%), url(./Assets/ps4bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .mainSection {
   display: flex;
   flex-direction: column;
@@ -41,7 +52,7 @@ h1 {
 
 .neon {
   animation: flicker 1.5s infinite alternate;
-  color: rgb(75, 69, 69);
+  color: #d80246;
 }
 
 @keyframes flicker {
@@ -79,10 +90,68 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  margin-left: 35px;
 }
 
-.recentScore h2 {
-  width: 60%;
+.text {
+  width: 20%;
+  font-family: "Games", sans-serif;
+  transform: scale(1.2);
+  color: grey;
+  position: absolute;
+}
+
+.text::after,
+.text::before {
+  position: absolute;
+  content: "Recent Scores";
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.text::before {
+  animation: glitch 0.3s linear 6;
+  color: dodgerblue;
+  z-index: -2;
+}
+
+.text::after {
+  animation: glitch 0.3s linear infinite;
+  color: #d80246;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  20% {
+    top: -1px;
+    left: -2px;
+  }
+
+  40% {
+    top: 1px;
+    left: 2px;
+  }
+
+  60% {
+    top: -1px;
+    left: -2px;
+  }
+
+  80% {
+    top: 1px;
+    left: -2px;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+  }
 }
 
 .displayScore {
@@ -90,20 +159,61 @@ h1 {
   flex-direction: column;
   padding: 0.5rem;
   height: 400px;
-  border-radius: 5px;
-  border: 2px solid rgb(43, 41, 41);
-  overflow-x: hidden !important;
+  border-radius: 15px;
+  border: 3.8px solid rgb(43, 41, 41);
+  overflow: hidden !important;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0, rgba(42, 102, 212, 0.8) -6px -2px 16px 0;
+  position: relative;
+}
+
+.displayScore::before {
+  content: "";
+  background-image: conic-gradient(#ff0052 40deg, transparent 120deg);
+  width: 175%;
+  height: 500px;
+  position: absolute;
+  bottom: 20px;
+  animation: rotate 2s linear infinite;
+}
+
+.displayScore::after {
+  content: " ";
+  width: 98%;
+  height: 400px;
+  background: linear-gradient(134deg, rgba(22, 74, 170, 0.205) 5%, rgba(5, 17, 19, 0.65) 50%, rgba(131, 112, 121, 0.5) 95%), url(./Assets/ps4bg.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  opacity: 1;
+  border: 1px solid grey;
+  position: absolute;
+  bottom: 8px;
+  right: 5.2px;
+  border-radius: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .displayScore li {
-  font-size: 1.5rem;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
   list-style: none;
+  z-index: 9999;
 }
 
 .displayScore li:nth-child(even) {
   padding: 10px;
   border-radius: 5px;
+  color: grey;
   background-color: rgba(181, 179, 177, 0.272);
 }
 
@@ -117,18 +227,22 @@ h1 {
 .form {
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "Games", sans-serif;
   gap: 1rem;
   width: 30%;
 }
 
 .form h2 {
   margin-bottom: 0;
+  color: grey;
 }
 
 input {
   height: 2rem;
   width: 98%;
+  font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
 }
 
 button {
@@ -142,7 +256,7 @@ button {
   color: #dfbfbf;
   background: #326bb0bc;
   text-transform: uppercase;
-  font-family: "Minecrafter.Reg", sans-serif;
+  font-family: "Games", sans-serif;
   letter-spacing: 2px;
   font-size: small;
   text-align: center;

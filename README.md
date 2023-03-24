@@ -58,7 +58,7 @@ Leaderboard is a project meant to master my skills in version control, GitHub fl
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://kel-nana.github.io/To-Do-list/dist)
+- [Live Demo Link](https://kel-nana.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
